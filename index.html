@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Zhiyuan Zhang" />
+    <meta name="description" content="Zhiyuan Zhang's Journal" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhiyuan Zhang's Journal</title>
+    <link rel="icon" href="favicon.ico" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>Zhiyuan Zhang's Journnal</h1>
+
+      <h3>Contents</h3>
+      <nav>
+        <ul>
+          <li><a href="#d1">Day 1</a></li>
+          <li><a href="#d2">Day 2</a></li>
+          <li><a href="#d3">Day 3</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 id="d1">Day 1</h2>
+        <span>
+          <p>
+            It is <i>Monday</i> today. <br /><strong>Weather</strong> is nice.
+            <br />I have a <b>lot</b> to do today.<br />
+            My <em>goals</em> are below.
+          </p>
+        </span>
+        <ol>
+          <li>Watch CSE 142 Lecture</li>
+          <li>Swim for an hour</li>
+          <li>Clean room</li>
+        </ol>
+      </section>
+
+      <hr />
+      <section>
+        <h2 id="d2">Day 2</h2>
+        <div>
+          <p>
+            I did not do anything meaningful today. But I saw lovely pugs online
+            and played some video games.
+          </p>
+          <img src="pug.jpg" alt="pug" height=300px></img>
+          <video height="300px" controls loop>
+              <source src="puggy.mp4" alt="puggy"/>
+          </video>
+          <audio src="a.wav" controls loop></audio>
+        </div>
+      </section>
+
+      <hr />
+      <section>
+        <h2 id="d3">Day 3</h2>
+        <div>
+          <p>I went kayaking today. I fell into the sea, then lost my glasses and caught a cold. What an unlucky day.</p>
+        </div>
+      </section>
+      <hr /> 
+      <section>
+          <details>
+              <summary><em>Summary over these days</em></summary>
+              <p>I don't like keeping track of my life by writing journal and I am not a good writer. Therefore I decided not to udpate my Journals in the future.</p>
+          </details>
+      </section>
+      <hr />
+
+      <fieldset>
+        <legend>Create new journal entry</legend>
+        <form>
+          <div>
+            <label>Date</label>
+            <input type="date" min="1900-01-01" max="2022-12-31">
+          </div>
+          <div>
+            <label >Name </label>
+            <input type="text">
+          </div>
+        </form>
+        <label>What's your purpose:</label>
+        <input list="purposes"/>
+        <datalist id="purposes">Purpose
+          <option value="For Fun">
+          <option value="Complaint">
+          <option value="Forced to">
+          <option value="Others">
+      </datalist>
+      <br />
+      <label>Weather</label>
+      <select>
+        <option>--Please choose an option--</option>
+        <option>Good</option>
+        <option>Bad</option>
+    </select>
+    
+        <textarea>Write your journal here</textarea>
+        
+        <label>
+          Visible to others<input type="checkbox">
+        </label>
+        <br />
+        <label>
+          I am sure to publish this journal to my space<input type="radio">
+        </label>
+        <br />
+        <button onclick="alert('New Journal Entry Created')">Submit</button>
+      </fieldset>
+    </main>
+    <footer>
+      <div>&copy;Zhiyuan Zhang</div>
+    </footer>
+  </body>
+</html>
