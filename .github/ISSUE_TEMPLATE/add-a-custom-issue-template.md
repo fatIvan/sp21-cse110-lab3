@@ -1,10 +1,10 @@
 ---
 name: Add a custom issue template
-about: Add Zhiyuan's first custom template.
+about: Zhiyuan's custom issue template
 title: "[CUSTOM]"
 labels: uncertainty
 assignees: fatIvan
 
 ---
 
-This is the first custom template Zhiyuan created.
+What do you want to tell?
