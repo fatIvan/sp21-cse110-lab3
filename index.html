@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zhiyuan Zhang's Journal</title>
     <link rel="icon" href="favicon.ico" />
+    <style>
+      h1 {
+        margin-top: 10cm;
+        margin-bottom: 5pc;
+        margin-left: 7vw;
+        margin-right: 10vh;
+        font-size: 3rem;
+        text-align: center;
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -33,9 +46,11 @@
           My <em>goals</em> are below.
         </span>
         <ol>
-          <li>Watch CSE 142 Lecture</li>
-          <li>Swim for an hour</li>
-          <li>Clean room</li>
+          <li style="background-color: #708ec2">Watch CSE 142 Lecture</li>
+          <li style="background-color: rgba(72, 234, 134, 0.56)">
+            Swim for an hour
+          </li>
+          <li style="background-color: blueviolet">Clean room</li>
         </ol>
       </section>
 
@@ -79,45 +94,53 @@
       <hr />
 
       <fieldset>
-        <legend>Create new journal entry</legend>
-        <form>
-          <div>
-            <label>Date</label>
-            <input type="date" min="1900-01-01" max="2022-12-31" />
-          </div>
-          <div>
-            <label>Name </label>
-            <input type="text" />
-          </div>
-        </form>
-        <label>What's your purpose:</label>
-        <input list="purposes" />
-        <datalist id="purposes">
-          Purpose
-          <option value="For Fun"></option>
-          <option value="Complaint"></option>
-          <option value="Forced to"></option>
-          <option value="Others"></option>
-        </datalist>
+        <div id="fi">
+          <legend>Create new journal entry</legend>
+          <form>
+            <div>
+              <label>Date</label>
+              <input type="date" min="1900-01-01" max="2022-12-31" />
+            </div>
+            <div>
+              <label>Name </label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Mood </label>
+              <input type="text" />
+            </div>
+          </form>
 
-        <br />
-        <label>Weather</label>
-        <select>
-          <option>--Please choose an option--</option>
-          <option>Good</option>
-          <option>Bad</option>
-        </select>
+          <label>What's your purpose:</label>
+          <input list="purposes" />
+          <datalist id="purposes">
+            Purpose
+            <option value="For Fun"></option>
+            <option value="Complaint"></option>
+            <option value="Forced to"></option>
+            <option value="Others"></option>
+          </datalist>
 
-        <br />
-        <label> Hide above information<input type="checkbox" /> </label>
-        <br />
-        <textarea>Write your journal here</textarea>
-        <br />
-        <label>
-          I am sure to publish this journal to my space<input type="radio" />
-        </label>
-        <br />
-        <button onclick="alert('New Journal Entry Created')">Submit</button>
+          <br />
+          <label>Weather</label>
+          <select>
+            <option>--Please choose an option--</option>
+            <option>Good</option>
+            <option>Bad</option>
+          </select>
+
+          <br />
+          <label> Hide above information<input type="checkbox" /> </label>
+          <br />
+          <textarea>Write your journal here</textarea>
+          <br />
+          <label>
+            I am sure to publish this journal to my space<input type="radio" />
+          </label>
+          <br />
+          <button onclick="alert('New Journal Entry Created')">Submit</button>
+        </div>
+        <p id="quote">Quote of the Day: Lorem ipsum dolor sit amet.</p>
       </fieldset>
     </main>
     <footer>
