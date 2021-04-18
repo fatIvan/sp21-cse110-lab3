@@ -38,6 +38,9 @@ img {
   position: relative;
 }
 
+summary.sum {
+  background-color: blueviolet;
+}
 video {
   margin: auto;
   padding: 10px 10px 10px 10px;
@@ -61,8 +64,34 @@ form {
   grid-column: 1 / -1;
 }
 
+div > label {
+  color: saddlebrown;
+}
+input[type="date"] {
+  color: red;
+}
+form ~ label {
+  color: aqua;
+}
+
+h2 + span {
+  background-color: black;
+}
+
+div p {
+  background-color: red;
+}
+
+h2,
+h3 {
+  color: orange;
+}
 #quote {
   grid-column: 2;
+  color: green;
+}
+*.day {
+  color: purple;
 }
 
 legend {
