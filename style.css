@@ -1,0 +1,90 @@
+/* this is an inline comment practice */
+@font-face {
+  font-family: "open_sanssemibold";
+  src: url("fonts/opensans-semibold-webfont.woff2") format("woff2"),
+    url("fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sansbold";
+  src: url("fonts/opensans-bold-webfont.woff2") format("woff2"),
+    url("fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+span {
+  color: hsla(292, 95%, 60%, 0.93);
+  display: inline;
+  max-height: 150px;
+}
+span:hover {
+  background-color: yellow;
+}
+
+img {
+  border-radius: 100px;
+  margin: 10px 10px 10px 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-width: 3px;
+  border-style: dotted;
+  border-color: red;
+  display: inline-block;
+  position: relative;
+}
+
+video {
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  height: 130px;
+  width: 70px;
+  position: absolute;
+}
+audio {
+  max-width: 10px;
+}
+audio:active {
+  background-color: blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 2;
+  flex-shrink: 3;
+  grid-column: 1 / -1;
+}
+
+#quote {
+  grid-column: 2;
+}
+
+legend {
+  grid-row: -1;
+}
+
+#fi {
+  display: grid;
+  grid-template-columns: 50vh 50vh;
+  grid-template-rows: 50vw 50vw;
+  justify-items: start;
+}
+textarea {
+  align-self: 2 1 2 2;
+}
+
+@media screen and (max-width: 200px) {
+  span {
+    color: gray;
+  }
+}
+
+html {
+  font-family: "open_sanssemibold";
+}
